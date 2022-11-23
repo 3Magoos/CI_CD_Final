@@ -32,3 +32,7 @@ Created new branches: dev, doc, test (main)<br />
 Secured main branch<br />
 pylint "3.11", disable...<br />
 actions<br />
+
+Next:<br />
+teamview up<br />
+test venv<br />
