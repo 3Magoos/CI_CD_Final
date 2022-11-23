@@ -26,7 +26,9 @@ Discussion branches<br />
  - tests<br />
 
 ### Day 2
-Git public organisation
-Try pylint again
-Created new branches: dev, doc, test (main)
-Secured main branch
+Git public organisation<br />
+Try pylint again<br />
+Created new branches: dev, doc, test (main)<br />
+Secured main branch<br />
+pylint "3.11", disable...<br />
+actions<br />
