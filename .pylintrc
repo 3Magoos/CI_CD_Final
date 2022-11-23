@@ -408,6 +408,8 @@ confidence=HIGH,
 # --enable=similarities". If you want to run only the classes checker, but have
 # no Warning level messages displayed, use "--disable=all --enable=classes
 # --disable=W".
+
+#Temporary disable from line 421
 disable=raw-checker-failed,
         bad-inline-option,
         locally-disabled,
@@ -416,8 +418,8 @@ disable=raw-checker-failed,
         useless-suppression,
         deprecated-pragma,
         use-symbolic-message-instead,
-        missing-module-docstring,
         invalid-name,
+        missing-module-docstring,
         missing-function-docstring,
         line-too-long
 
