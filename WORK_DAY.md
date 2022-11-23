@@ -24,3 +24,9 @@ Discussion branches<br />
  - dev<br />
  - doc<br />
  - tests<br />
+
+### Day 2
+Git public organisation
+Try pylint again
+Created new branches: dev, doc, test (main)
+Secured main branch
