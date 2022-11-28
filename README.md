@@ -6,4 +6,6 @@ Based on the official [flask tutorial](https://github.com/pallets/flask/tree/mai
 
 How to test dev bransch code locally by using minikube and light requirement.txt<br />
 
-Copy Dockerfile.flask > Dockerfile
+Copy Dockerfile.db > Dockerfile<br />
+
+Copy Dockerfile.flask > Dockerfile<br />
