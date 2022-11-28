@@ -46,7 +46,7 @@ pre-commit done<br />
 outer loop yml file started<br />
 
 Next:<br />
-Ask teacher about org auth ssh + screenshot<br />
+Ask teacher about org auth ssh + screenshot hand in's<br />
 Registry publish<br />
 Tags<br />
 Docker build<br />
