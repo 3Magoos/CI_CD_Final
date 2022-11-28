@@ -53,3 +53,4 @@ Docker build<br />
 Integration test<br />
 Unit tests<br />
 Coverage <br />
+Setup kubernetes<br />
