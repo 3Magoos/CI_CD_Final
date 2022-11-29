@@ -10,19 +10,22 @@
 name: Create and publish a Docker image
 
 on:
-  push:
-    branches: ['main']
+  workflow_run:
+     workflows: ["Run Tests on every commit"]
+     types: [completed] #requested
+
+permissions:
+  contents: read
+  packages: write
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
-jobs:
-  build-and-push-image:
+jobs: 
+  on-success:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout repository
