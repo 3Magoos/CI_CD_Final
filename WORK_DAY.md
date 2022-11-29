@@ -24,3 +24,6 @@ Discussion branches<br />
  - dev<br />
  - doc<br />
  - tests<br />
+
+ ### Day 4 (11.29)
+ Adding this line to test commit.yml Fixing the yaml for Fredrik
