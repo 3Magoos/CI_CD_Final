@@ -54,4 +54,3 @@ Integration test<br />
 Unit tests<br />
 Coverage <br />
 Setup kubernetes<br />
-
