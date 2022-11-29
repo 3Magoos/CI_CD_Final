@@ -25,5 +25,35 @@ Discussion branches<br />
  - doc<br />
  - tests<br />
 
- ### Day 4 (11.29)
- Adding this line to test commit.yml Fixing the yaml for Fredrik
+### Day 2
+Git public organisation<br />
+Try pylint again<br />
+Created new branches: dev, doc, test (main)<br />
+Secured main branch<br />
+pylint "3.11", disable...<br />
+actions<br />
+
+Next:<br />
+teamview up<br />
+test venv<br />
+
+### Day 3
+Test - Local vs kubernetes - readme<br />
+venv<br />
+started with yml files<br />
+docker instances ok<br />
+pre-commit done<br />
+outer loop yml file started<br />
+
+Next:<br />
+Ask teacher about org auth ssh + screenshot hand in's<br />
+Registry publish<br />
+Tags<br />
+Docker build<br />
+Integration test<br />
+Unit tests<br />
+Coverage <br />
+Setup kubernetes<br />
+
+### Day 4 (11.29)
+Adding this line to test commit.yml Fixing the yaml for Fredrik
