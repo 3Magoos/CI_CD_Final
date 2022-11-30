@@ -1,4 +1,7 @@
-from shop_app import db
+from shop_app.db import get_db_config
 
 def test_db_conf():
-    assert isinstance(db.get_db_config(), dict)
+    assert isinstance(get_db_config(), dict)
+
+def test_db_conf_info():
+    assert get_db_config() != ""
