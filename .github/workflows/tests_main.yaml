@@ -1,10 +1,10 @@
-## Run on commit
-## Run linting
-## Run test aut.
-## If success tag image latest, push to ghcr
-name: Run Tests on every commit
+# TODO add test coverage
+name: Run Tests on main
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -22,7 +22,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       
       - name: Install dependencies
-        run: pip install -r requirements.txt 
+        run: |
+          python -m pip install --upgrade pip
+          if [-f requirements.txt]; then pip install -r requirements.txt; fi
       
       - name: Run pytest
         run: python -m pytest --import-mode=append tests/
