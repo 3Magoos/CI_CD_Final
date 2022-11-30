@@ -39,14 +39,17 @@ jobs:
           tags: |
             type=sha
 
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: get_branch
+
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           push: true
           tags: |
-            3magoos/ci_cd_final:${{ env.BRANCH }}
+            3magoos/ci_cd_final:${{ steps.get_branch.outputs.branch }}
             ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            BRANCH=${{ env.BRANCH}}
