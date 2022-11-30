@@ -28,4 +28,6 @@ jobs:
           if [-f requirements.txt]; then pip install -r requirements.txt; fi
       
       - name: Run pytest
-        run: python -m pytest --import-mode=append tests/
+        run: |
+          python -m pytest --import-mode=append tests/
+          pytest --cov=shop_app tests/
