@@ -3,9 +3,8 @@ name: Run Tests on every commit
 
 on:
   push: 
-    branches:
-      - "!main"
-      - "**"
+    branches-ignore:
+      - main
 
 jobs:
   build:

@@ -43,5 +43,5 @@ jobs:
           context: .
           push: true
 #          tags: ${{ steps.meta.outputs.tags }}
-          tags: 3magoos/CICD_Final:latest
+          tags: 3magoos/ci_cd_final:latest
           labels: ${{ steps.meta.outputs.labels }}
