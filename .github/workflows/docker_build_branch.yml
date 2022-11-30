@@ -6,6 +6,8 @@ on:
   workflow_run:
      workflows: ["Run Tests on every commit"]
      types: [completed] #requested
+     branches-ignore: |
+      - main
 
 permissions:
   contents: read
