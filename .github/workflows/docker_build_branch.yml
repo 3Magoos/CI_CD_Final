@@ -1,6 +1,6 @@
 # TODO add branch name, short git sha
 
-name: Create and publish a Docker image
+name: "On branch: create and publish a Docker image"
 
 on:
   workflow_run:
@@ -44,6 +44,6 @@ jobs:
           push: true
 #          tags: ${{ steps.meta.outputs.tags }}
           tags: |
-            ${{github.ref.type.branch}}
+            ${{github.ref_type.branch}}
             ${{github.sha}}
           labels: ${{ steps.meta.outputs.labels }}

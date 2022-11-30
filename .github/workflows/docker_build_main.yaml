@@ -1,6 +1,6 @@
 # TODO add tag :latest
 
-name: Create and publish a Docker image
+name: "On main: create and publish a Docker"
 
 on:
   workflow_run:
@@ -43,5 +43,5 @@ jobs:
           context: .
           push: true
 #          tags: ${{ steps.meta.outputs.tags }}
-          tags: 3magoos/ci_cd_final:latest
+          tags: ${{ steps.meta.outputs.tags}}:latest
           labels: ${{ steps.meta.outputs.labels }}
