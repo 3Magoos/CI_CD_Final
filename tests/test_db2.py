@@ -5,4 +5,3 @@ def test_db_conf():
 
 def test_db_conf_info():
     assert get_db_config() != ""
-
