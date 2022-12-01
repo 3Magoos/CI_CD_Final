@@ -36,3 +36,25 @@ actions<br />
 Next:<br />
 teamview up<br />
 test venv<br />
+
+### Day 3
+Test - Local vs kubernetes - readme<br />
+venv<br />
+started with yml files<br />
+docker instances ok<br />
+pre-commit done<br />
+outer loop yml file started<br />
+
+Next:<br />
+Ask teacher about org auth ssh + screenshot hand in's<br />
+Registry publish<br />
+Tags<br />
+Docker build<br />
+Integration test<br />
+Unit tests<br />
+Coverage <br />
+Setup kubernetes<br />
+
+
+### Day 4
+Github Actions workflows

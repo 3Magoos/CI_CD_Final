@@ -1,6 +1,7 @@
 name: Pylint
 
-on: [push]
+on: push
+# Happens on every push on every branch
 
 jobs:
   build:
