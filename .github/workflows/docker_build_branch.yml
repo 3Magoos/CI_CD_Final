@@ -5,7 +5,9 @@ name: "On branch: create and publish a Docker image"
 on:
   workflow_run:
      workflows: ["Run Tests on every commit"]
-     types: [completed] #requested
+     types: [requested] #requested
+     branches-ignore: |
+      - main
 
 permissions:
   contents: read
@@ -21,8 +23,10 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+#      - name: Checkout repository
+#       uses: actions/checkout@v3
+#        with:
+#          ref: ${{ branch }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
@@ -37,13 +41,18 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value={{branch}}
             type=sha
+
+#      - name: Extract branch name
+#        shell: bash
+#        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+#        id: get_branch
 
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: |
+#            ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
