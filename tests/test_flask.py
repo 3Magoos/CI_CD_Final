@@ -16,3 +16,4 @@ def client(app):
 def test_request_example(client):
     response = client.get("/")
     assert isinstance(response.text, str)
+
