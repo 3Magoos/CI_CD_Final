@@ -4,11 +4,11 @@ from shop_app import create_app
 
 @pytest.fixture()
 def app():
-    app = create_app()
-    app.config.update({
+    a = create_app()
+    a.config.update({
         "TESTING": True,
     })
-    yield app
+    yield a
 
 @pytest.fixture()
 def client(app):
